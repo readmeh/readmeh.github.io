@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>ggplot2入门</title>
+    <url>/readmeh.github.io/2021/01/11/ggplot2%E5%85%A5%E9%97%A8/</url>
+    <content><![CDATA[<h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="ggplot2简介"><a href="#ggplot2简介" class="headerlink" title="ggplot2简介"></a>ggplot2简介</h2><p>&emsp;&emsp;ggplot2是一个用于生成统计或数据图形的R包。与大多数其他图形包不同，ggplot2有一个基于图形语法的底层语法<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Leland Wilkinson, &lt;em&gt;The Grammar of Graphics&lt;/em&gt;, 2nd ed., Statistics and Computing (Springer, 2005).&lt;/p&gt;"><sup>1</sup></a></span>，允许您通过组合独立组件来组合图形。这使ggplot2功能强大。 您可以创建针对您的特定问题的新颖图形，而不仅限于预先定义的图形集。 虽然必须学习语法的想法听起来不胜枚举，但ggplot2实际上很容易学习：有一套简单的核心原则，很少有特殊情况。 困难的部分是，可能需要一点时间才能忘记使用其他图形工具带来的所有先入之见。</p>
+<p>&emsp;&emsp;ggplot2提供漂亮，容易的绘图，可处理诸如图例之类的小巧细节。 实际上，其精心选择的默认值意味着您可以在几秒钟内制作出具有出版物质量的图形。 但是，如果您确实有特殊的格式要求，则ggplot2全面的主题系统可以使您轻松完成所需的工作。 最终，这意味着您不必花时间使图表看起来更漂亮，而可以专注于创建最能揭示数据中信息的图表。</p>
+<p>&emsp;&emsp;ggplot2设计为可迭代工作。 您从显示原始数据的图层开始。 然后添加注释和统计摘要层。 这使您可以使用与设计分析时相同的结构化思维来制作图形。 这样可以减少您的脑海中的情节和页面上的情节之间的距离。 对于尚未开发专家使用的结构化分析方法的学生，这尤其有用。</p>
+]]></content>
+      <tags>
+        <tag>R</tag>
+        <tag>ggplot2</tag>
+        <tag>tidyverse</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/readmeh.github.io/2021/01/11/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://readmeh.github.io/">readmeh</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/readmeh">GitHub</a>.</p>
+<a id="more"></a>
+
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br><span class="line">dff</span><br><span class="line">afasa</span><br><span class="line">asdada</span><br><span class="line">da</span><br><span class="line">dad</span><br><span class="line">da</span><br><span class="line">dad</span><br><span class="line">ad</span><br><span class="line">ad</span><br><span class="line">ad</span><br><span class="line">ad</span><br><span class="line">asd</span><br><span class="line">a</span><br><span class="line">d</span><br><span class="line">asd</span><br><span class="line">a</span><br><span class="line">d</span><br><span class="line">as</span><br><span class="line">d</span><br><span class="line">asd</span><br><span class="line">as</span><br><span class="line">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span><br><span class="line">ffsgsdd</span><br><span class="line">hf</span><br><span class="line">hdfh</span><br><span class="line">df</span><br><span class="line">hdf</span><br><span class="line">ghd</span><br><span class="line">h</span><br><span class="line">drt</span><br><span class="line">ty</span><br><span class="line">rt</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>示例</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo踩坑合集</title>
+    <url>/readmeh.github.io/2021/01/11/hexo%E8%B8%A9%E5%9D%91%E5%90%88%E9%9B%86/</url>
+    <content><![CDATA[<h1 id="hexo自身出错"><a href="#hexo自身出错" class="headerlink" title="hexo自身出错"></a>hexo自身出错</h1><h2 id="hexo报错-YAMLException-can-not-read-a-block-mapping-entry-a-multiline-key-may-not-be-an-implicit-key-at-line-7-column-1"><a href="#hexo报错-YAMLException-can-not-read-a-block-mapping-entry-a-multiline-key-may-not-be-an-implicit-key-at-line-7-column-1" class="headerlink" title="hexo报错 YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 7, column 1"></a>hexo报错 YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 7, column 1</h2><a id="more"></a>
+
+<p>该错误出现原因大多为<code>: </code>没有加空格，这个错误可以出现在hexo的任何配置文件中如:</p>
+<ul>
+<li><p>  站点配置文件:_config.yml <img src="https://s3.ax1x.com/2021/01/11/s8d5TI.png" alt="站点配置文件" style="zoom:50%;"></p>
+</li>
+<li><p>  主题配置文件:themes/next/_config.yml;</p>
+</li>
+<li><p>文章:source/_posts/hello-world.md;<img src="https://s3.ax1x.com/2021/01/11/s8d40A.png" alt="s8d40A.png"></p>
+<p>  <strong>一定要注意文章<code>tags: </code>后面虽然换行了，但也要有空格</strong></p>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>分类</title>
+    <url>/readmeh.github.io/categories/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>tags</title>
+    <url>/readmeh.github.io/tags/index.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+</search>
