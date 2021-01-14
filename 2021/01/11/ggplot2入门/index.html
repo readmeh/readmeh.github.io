@@ -20,20 +20,22 @@
     var CONFIG = {"hostname":"github.com","root":"/readmeh.github.io/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"hide","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="介绍ggplot2简介&amp;emsp;&amp;emsp;ggplot2是一个用于生成统计或数据图形的R包。与大多数其他图形包不同，ggplot2有一个基于图形语法的底层语法1，允许您通过组合独立组件来组合图形。这使ggplot2功能强大。 您可以创建针对您的特定问题的新颖图形，而不仅限于预先定义的图形集。 虽然必须学习语法的想法听起来不胜枚举，但ggplot2实际上很容易学习：有一套简单的核心原则，很少有特">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://github.com/readmeh/2021/01/11/hello-world/index.html">
+<meta property="og:title" content="ggplot2入门">
+<meta property="og:url" content="https://github.com/readmeh/2021/01/11/ggplot2%E5%85%A5%E9%97%A8/index.html">
 <meta property="og:site_name" content="Readmeh Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="介绍ggplot2简介&amp;emsp;&amp;emsp;ggplot2是一个用于生成统计或数据图形的R包。与大多数其他图形包不同，ggplot2有一个基于图形语法的底层语法1，允许您通过组合独立组件来组合图形。这使ggplot2功能强大。 您可以创建针对您的特定问题的新颖图形，而不仅限于预先定义的图形集。 虽然必须学习语法的想法听起来不胜枚举，但ggplot2实际上很容易学习：有一套简单的核心原则，很少有特">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-01-10T18:44:11.576Z">
-<meta property="article:modified_time" content="2021-01-11T09:34:21.093Z">
+<meta property="article:published_time" content="2021-01-11T07:31:18.000Z">
+<meta property="article:modified_time" content="2021-01-11T08:44:37.633Z">
 <meta property="article:author" content="readmeh">
-<meta property="article:tag" content="示例">
+<meta property="article:tag" content="R">
+<meta property="article:tag" content="ggplot2">
+<meta property="article:tag" content="tidyverse">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://github.com/readmeh/2021/01/11/hello-world/">
+<link rel="canonical" href="https://github.com/readmeh/2021/01/11/ggplot2%E5%85%A5%E9%97%A8/">
 
 
 <script id="page-configurations">
@@ -46,7 +48,7 @@
   };
 </script>
 
-  <title>Hello World | Readmeh Blog</title>
+  <title>ggplot2入门 | Readmeh Blog</title>
   
 
 
@@ -181,7 +183,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://github.com/readmeh/2021/01/11/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/readmeh/2021/01/11/ggplot2%E5%85%A5%E9%97%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/readmeh.github.io/images/avatar.gif">
@@ -194,7 +196,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hello World
+          ggplot2入门
         </h1>
 
         <div class="post-meta">
@@ -205,7 +207,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-01-11 02:44:11 / 修改时间：17:34:21" itemprop="dateCreated datePublished" datetime="2021-01-11T02:44:11+08:00">2021-01-11</time>
+              <time title="创建时间：2021-01-11 15:31:18 / 修改时间：16:44:37" itemprop="dateCreated datePublished" datetime="2021-01-11T15:31:18+08:00">2021-01-11</time>
             </span>
 
           
@@ -219,15 +221,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><h2 id="ggplot2简介"><a href="#ggplot2简介" class="headerlink" title="ggplot2简介"></a>ggplot2简介</h2><p>&emsp;&emsp;ggplot2是一个用于生成统计或数据图形的R包。与大多数其他图形包不同，ggplot2有一个基于图形语法的底层语法<span class="citation"><a class="footnote-ref" tabindex="0" data-toggle="popover" data-content="&lt;p&gt;Leland Wilkinson, &lt;em&gt;The Grammar of Graphics&lt;/em&gt;, 2nd ed., Statistics and Computing (Springer, 2005).&lt;/p&gt;"><sup>1</sup></a></span>，允许您通过组合独立组件来组合图形。这使ggplot2功能强大。 您可以创建针对您的特定问题的新颖图形，而不仅限于预先定义的图形集。 虽然必须学习语法的想法听起来不胜枚举，但ggplot2实际上很容易学习：有一套简单的核心原则，很少有特殊情况。 困难的部分是，可能需要一点时间才能忘记使用其他图形工具带来的所有先入之见。</p>
+<p>&emsp;&emsp;ggplot2提供漂亮，容易的绘图，可处理诸如图例之类的小巧细节。 实际上，其精心选择的默认值意味着您可以在几秒钟内制作出具有出版物质量的图形。 但是，如果您确实有特殊的格式要求，则ggplot2全面的主题系统可以使您轻松完成所需的工作。 最终，这意味着您不必花时间使图表看起来更漂亮，而可以专注于创建最能揭示数据中信息的图表。</p>
+<p>&emsp;&emsp;ggplot2设计为可迭代工作。 您从显示原始数据的图层开始。 然后添加注释和统计摘要层。 这使您可以使用与设计分析时相同的结构化思维来制作图形。 这样可以减少您的脑海中的情节和页面上的情节之间的距离。 对于尚未开发专家使用的结构化分析方法的学生，这尤其有用。</p>
 
     </div>
 
@@ -237,7 +233,9 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/readmeh.github.io/tags/%E7%A4%BA%E4%BE%8B/" rel="tag"># 示例</a>
+              <a href="/readmeh.github.io/tags/R/" rel="tag"># R</a>
+              <a href="/readmeh.github.io/tags/ggplot2/" rel="tag"># ggplot2</a>
+              <a href="/readmeh.github.io/tags/tidyverse/" rel="tag"># tidyverse</a>
           </div>
 
         
@@ -245,10 +243,13 @@
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/readmeh.github.io/2021/01/11/ggplot2%E5%85%A5%E9%97%A8/" rel="next" title="ggplot2入门">
-      ggplot2入门 <i class="fa fa-chevron-right"></i>
+    <a href="/readmeh.github.io/2021/01/11/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/readmeh.github.io/2021/01/11/hexo%E8%B8%A9%E5%9D%91%E5%90%88%E9%9B%86/" rel="next" title="hexo踩坑合集">
+      hexo踩坑合集 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -308,7 +309,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ggplot2%E7%AE%80%E4%BB%8B"><span class="nav-number">1.1.</span> <span class="nav-text">ggplot2简介</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
